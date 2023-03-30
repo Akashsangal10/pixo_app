@@ -1,53 +1,220 @@
-<%= render "nav" %>
-<div class="row">
-	<div class="col-lg-6">
-	</div>
+<style>
 
-	<div class="col-lg-6">
-	</div>
 
-</div>
+.sp {
+    display: flex;
+}
 
-<div class="container">
-	<div class="row">
-		<div class="col-lg-8 col-lg">
+.start{
+	margin-top: 2%;
+	padding: 2%;
+}
+
+.img_preview {
+/*	margin-right: 30px;*/
+    margin: 30px;
+    height: 275px;
+    width: 500px;
+}
+
+.absolute{
+	position: relative;
+	height: 500px;
+	left: 200px;
+}
+
+.absolute1{
+	height: 150px;
+	margin-tap: -500px;
+	z-index: 10;
+	position: absolute;
+	margin-top: 334px;
+	margin-left: 500px;
+}
+
+#relative{
+	position: relative;
+	margin-left: 100px;
+
+}
+
+.center{
+	margin-left: 500px;
+}
+
+.space{
+	margin-left: 200px;
+}
+
+.space1{
+	margin-top: 50px;
+	margin-left: 60px;
+}
+
+.space2{
+	margin-left:550px;
+	margin-top:-140px; 
+}
+</style>
+
+
+
+
+<div class="container mx-5 my-4 ">
+	<div class="row ">
+		<div class="col-lg-10 ">
 			<h2><%= BusinessGrowth.last.title %></h2>
 			<p><%= BusinessGrowth.last.description %></p>
 			<a class="btn  btn-primary" href="#">Talk to Our Expert</a>
 		</div>
 
-		<div class="col-lg-4 col-lg">
-			<%= image_tag(BusinessGrowth.last.image, style: 'width:50%')%>
+		<div class="col-lg-2">
+			<%= image_tag(BusinessGrowth.last.image, style: 'width:100%')%>
 		</div>
 	</div>
 </div>
 
-<div class="container m-5 card bg-light">
-	<div class="row h-100">
+<div class="container m-5 card bg-light ">
+	<div class="row ">
 		
-			<div class="col-lg-2">
-				<h3>Circle</h3>
+			<div class="col-lg-2 p-4 sp">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:30%')%>
+				<h4>Circle</h4>
 			</div>
-			<div class="col-lg-2">
-				<h3>CodeLab</h3>
+			<div class="col-lg-2 p-4 sp">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:20%')%>
+				<h4>CodeLab</h4>
 			</div>
 	
-			<div class="col-lg-2">
-				<h3>ideaa</h3>
+			<div class="col-lg-2 p-4 sp">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:30%')%>
+				<h4>ideaa</h4>
 			</div>
-			<div class="col-lg-2">
-				<h3>hexa</h3>
+			<div class="col-lg-2 p-4 sp">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:30%')%>
+				<h4>hexa</h4>
 			</div>
 		
 		
-			<div class="col-lg-2">
-				<h3>muzica</h3>
+			<div class="col-lg-2 p-4 sp">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:30%')%>
+				<h4>muzica</h4>
 			</div>
-			<div class="col-lg-2">
-				<h3>LightAI</h3>
+			<div class="col-lg-2 p-4 sp">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:30%')%>
+				<h4>LightAI</h4>
 			</div>	
-		
+	</div>
+</div>
+
+<div class="container mx-5">
+	<div class="row">
+		<div class="col-lg-3 ">
+			<h5><%= sanitize Service.last.title %></h5>
+		</div>
+			<div class="col-lg-3" >
+					<h6>Design and discovery</h6>
+					<p><%= sanitize Service.last.title %></p>
+			</div>
+			<div class="col-lg-3" >
+					<h6>Web Development</h6>
+					<p><%= sanitize Service.last.title %></p>
+			</div>
+
+			<div class="col-lg-3" >
+					<h6>Web Development</h6>
+					<p><%= sanitize Service.last.title %></p>
+			</div>
+	</div><br>
+
+	<div class="row">
+		<div class="col-lg-3 ">
+			<a class="btn  btn-primary" href="#">View All<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+		</div>
+		<div class="col-lg-3" >
+				<h6>Design and discovery</h6>
+				<p><%= sanitize Service.last.title %></p>
+		</div>
+		<div class="col-lg-3" >
+				<h6>Design and discovery</h6>
+				<p><%= sanitize Service.last.title %></p>
+		</div>
+		<div class="col-lg-3" >
+				<h6>Design and discovery</h6>
+				<p><%= sanitize Service.last.title %></p>
+		</div>
 
 	</div>
 
+</div>
+
+<div class="container card mx-5 mt-2 "  style="background-color:#d9fcf7">
+	<div class="row ">
+			<div class=" col-lg-8 absolute">
+				<h3 class="start"><%= sanitize Startup.last.title %></h3>
+				<p > <%= sanitize Startup.last.description %></p>
+				<%= image_tag(Startup.last.image, style:"width:100%", :class => "img_preview")%>
+			</div>
+			<div class="col-lg-4 absolute1"  style="background-color:#FFFFFF">
+				<h3>Startup</h3>
+				<p>Get your MVP built fast, test it on the market, pivot if necessary, and scale to a mature product with our award-winning team. </p>
+			</div>
+		</div>		
+</div>
+
+<div class="row mx-5 my-5">
+	<div class="col-lg-6">
+		<h3>Why work with us</h3>
+		<p>There are many custom software development companies out there vying for your attention. We stand out from the crowd by being</p>
+	</div>
+
+	<div class="col-lg-6" style="background-color:#f7eac6">
+		<h3>Trused by top companies</h3>
+		<p>Leader in car industry, energetics, and finance have chose us as their software development partner.  </p>
+	</div>
+
+</div>
+
+
+<div class="row">
+  <h3 class="center">Work</h3>
+  <p class="space">We develop web and mobile application for startups, established businesses and enterprises. </p>
+</div>
+
+<div class="row" style="background-color:#c6f7ea">
+  	<div class="col-lg-6 space1" >
+  			<h3 class="">Olera</h3>
+  			<h5>Your guide to the eldercare ecosystem</h5>
+  			<p>Design and development of a Ruby on Rails app for the elder care plateform.</p>
+  	</div>
+
+  	<div class="col-lg-5">
+  		<%= image_tag(Startup.last.image, style:"width:50%")%>
+  	</div>
+</div>
+
+<div class="row my-5" style="background-color:#edf5ef">
+	<div class="col-lg-6 mx-5">
+		<div class="col-lg-4">
+			<%= image_tag(BusinessGrowth.last.image, style: 'width:10%', class:"mx-3 my-3")%>
+			<p>We help businesses grow by services that matter.</p>
+			<p>support@pixoatic.com</p>
+			<p>Pixoatic Solutions</p>
+		</div>
+	</div>
+
+	<div class="col-lg-6 space2">		
+		<h3>Service</h3>
+		<p>Design & Discovery</p>
+		<p>Web Development</p>
+		<p>Mobile Apps</p>
+		<p>Website Development</p>
+		<p>Enterpise Apps</p>
+		<p>Support & Maintenance</p>
+	</div>
+</div> 
+
+
+<div class="row mx-3">
+	<p>Copyright@ 2023 All right reserved</p>
 </div>

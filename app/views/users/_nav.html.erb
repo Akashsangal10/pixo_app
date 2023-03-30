@@ -1,31 +1,40 @@
-<nav class="navbar navbar-expand-lg navbar-light ">
-  <a class="navbar-brand" href="#">logo</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+<style>
+	ul.navbar-nav {
+    margin-left: 30%;
+}
 
-  <div class="collapse navbar-collapse " id="navbarSupportedContent" align="center">
+a.btn.btn-outline-primary {
+    margin-left: 18%;
+}
+
+a.navbar-brand {
+    margin-left: 3%;
+}
+</style>
+
+
+<nav class="navbar  navbar-expand-md  navbar-light   ">
+  <a class="navbar-brand" href="#">logo</a>
+  <div class="collapse navbar-collapse  ">
     <ul class="navbar-nav ">
-      
-	      <li class="nav-item active">
-	        <a class="nav-link m-2" href="#">Home <span class="sr-only"></span></a>
+	      <li class="nav-item ">
+	        <a class="nav-link" href="#">Home </a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link m-2" href="#">Service</a>
+	        <a class="nav-link" href="#">Service</a>
 	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link m-2" href="#">Our Work</a>
+	      <li class="nav-item">
+	        <a class="nav-link " href="#">Our Work</a>
 	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link m-2" href="#">Careers</a>
+	      <li class="nav-item">
+	        <a class="nav-link" href="#">Careers</a>
 	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link m-2" href="#">Contact Us</a>
+	      <li class="nav-item">
+	        <a class="nav-link " href="#">Contact Us</a>
 	      </li>
-      <li class="nav-item pull-right">
-        <a class="nav-link btn btn-outline-primary text-primary  " href="#">Request Quote</a>
-        <%#= link_to "Request Quote",  class:"nav-link btn btn-primary btn-lg mb-4" %>
-      </li>
+  
     </ul>
+    <a class=" btn btn-outline-primary" href="#">Request Quote</a>
   </div>
 </nav>
+
