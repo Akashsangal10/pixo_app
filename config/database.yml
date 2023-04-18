@@ -23,8 +23,8 @@ test:
 production:
   <<: *default
 
-   database: pixo_app_6bqg
-  password: x5s3oKU5o7464XnmXIdndNmFNrRwHLZC
-  host: dpg-cgipd59r8t1g7lqt8hsg-a 
-  username: pixo_app_6bqg_user
-  port: 5432
+  #  database: pixo_app_6bqg
+  # password: x5s3oKU5o7464XnmXIdndNmFNrRwHLZC
+  # host: dpg-cgipd59r8t1g7lqt8hsg-a 
+  # username: pixo_app_6bqg_user
+  # port: 5432

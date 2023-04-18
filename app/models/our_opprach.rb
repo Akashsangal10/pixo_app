@@ -1,0 +1,2 @@
+class OurOpprach < ApplicationRecord
+end

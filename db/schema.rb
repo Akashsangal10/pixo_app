@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_03_29_095458) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_11_133442) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -71,6 +71,38 @@ ActiveRecord::Schema[7.0].define(version: 2023_03_29_095458) do
     t.string "image"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "inqueries", force: :cascade do |t|
+    t.string "fullname"
+    t.string "email"
+    t.string "country"
+    t.string "skype"
+    t.text "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "our_oppraches", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "title1"
+    t.string "description1"
+    t.string "title2"
+    t.string "description2"
+    t.string "title3"
+    t.string "description3"
+    t.string "title4"
+    t.string "description4"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "react_nativedevelopers", force: :cascade do |t|
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "title"
   end
 
   create_table "services", force: :cascade do |t|

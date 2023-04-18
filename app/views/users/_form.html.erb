@@ -1,0 +1,49 @@
+<style>
+.space21{
+	margin-top: 40px;
+}
+.space22{
+	margin-left:50px;
+}
+
+.flex22{
+	display:flex;
+	margin-left: 50px;
+}
+
+.space7{
+	margin-left:5px;
+}
+</style>
+<div class="card space21" style="background-color: #f5ecd3;">
+	<p class=" space21 space22">Looking To Hire</p>
+	<h6 class="space22">React Native Developers?</h6>
+	<%= form_with(model: @inquery,  url: inquery_path)do |form| %>
+			<div class="row">
+				<div class="col-lg-6 space21  ">
+					<div class="col-lg-3 flex22">
+						<%= form.text_field :fullname, autofocus: true, placeholder: "Full Name" %>
+						<%= form.email_field :email, autofocus: true, placeholder: "Email", class:"space7" %>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg-6 space21 flex22">
+						<%= form.text_field :country, autofocus: true, placeholder: "Country" %>
+						<%= form.text_field :skype, autofocus: true, placeholder: "Skype", class:"space7" %>
+				</div>
+				<div class="row">
+					<div class="col-lg-6 space21 flex22">
+						<%= form.text_field :message, autofocus: true, placeholder: "Message" %>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="col-lg4 space21 flex22">
+					<%= form.submit "Submit",class: ''%>
+				</div>
+			</div>
+	<% end %>
+</div>

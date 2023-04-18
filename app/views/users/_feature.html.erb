@@ -1,0 +1,100 @@
+<style>
+
+.sp {
+    display: flex;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.space7{
+	
+}
+
+.space8{
+	margin-top:85px;
+	margin-left:75px;
+	margin-right:75px;
+}
+.space9{
+	margin-top:2px;
+}
+</style>
+
+<div class="card bg-light space7 ">
+	<div class="row sp">
+		
+			<div class="col-lg-2 sp1 ">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:30%')%>
+				<h4>Circle</h4>
+			</div>
+			<div class="col-lg-2 sp1 ">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:20%')%>
+				<h4>CodeLab</h4>
+			</div>
+	
+			<div class="col-lg-2 sp1 ">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:30%')%>
+				<h4>ideaa</h4>
+			</div>
+			<div class="col-lg-2 sp1">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:30%')%>
+				<h4>hexa</h4>
+			</div>
+		
+		
+			<div class="col-lg-2 sp1">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:30%')%>
+				<h4>muzica</h4>
+			</div>
+			<div class="col-lg-2 sp1">
+				<%= image_tag(BusinessGrowth.last.image, style: 'width:30%')%>
+				<h4>LightAI</h4>
+			</div>	
+	</div>
+</div>
+
+
+
+
+<div class="container space8">
+	<div class="row space9">
+		<div class="col-lg-3  ">
+			<h5><%= sanitize Service.last.title %></h5>
+		</div>
+			<div class="col-lg-3" >
+					<h6>Design and discovery</h6>
+					<p><%= sanitize Service.last.title %></p>
+			</div>
+			<div class="col-lg-3" >
+					<h6>Web Development</h6>
+					<p><%= sanitize Service.last.title %></p>
+			</div>
+
+			<div class="col-lg-3" >
+					<h6>Web Development</h6>
+					<p><%= sanitize Service.last.title %></p>
+			</div>
+	</div><br>
+
+	<div class="row ">
+		<div class="col-lg-3 ">
+			<!-- <a class="btn  btn-primary" href="#">View All<i class="fa fa-arrow-right" aria-hidden="true"></i></a> -->
+		</div>
+		<div class="col-lg-3" >
+				<h6>Design and discovery</h6>
+				<p><%= sanitize Service.last.title %></p>
+		</div>
+		<div class="col-lg-3" >
+				<h6>Design and discovery</h6>
+				<p><%= sanitize Service.last.title %></p>
+		</div>
+		<div class="col-lg-3" >
+				<h6>Design and discovery</h6>
+				<p><%= sanitize Service.last.title %></p>
+		</div>
+
+	</div>
+
+</div>
+
+

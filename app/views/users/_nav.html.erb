@@ -4,27 +4,30 @@
 }
 
 a.btn.btn-outline-primary {
-    margin-left: 18%;
+    margin-left: 10%;
 }
 
 a.navbar-brand {
     margin-left: 3%;
 }
+.navheight{
+	height: 85px;
+}
 </style>
 
 
-<nav class="navbar  navbar-expand-md  navbar-light   ">
+<nav class="navbar  navbar-expand-md  navbar-light navheight  ">
   <a class="navbar-brand" href="#">logo</a>
   <div class="collapse navbar-collapse  ">
     <ul class="navbar-nav ">
 	      <li class="nav-item ">
-	        <a class="nav-link" href="#">Home </a>
+	        <a class="nav-link" href="<%= root_path %>">Home </a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link" href="#">Service</a>
+	        <a class="nav-link" href="<%= services_path %>">Service</a>
 	      </li>
 	      <li class="nav-item">
-	        <a class="nav-link " href="#">Our Work</a>
+	        <a class="nav-link " href="#">on-Demand Development</a>
 	      </li>
 	      <li class="nav-item">
 	        <a class="nav-link" href="#">Careers</a>
