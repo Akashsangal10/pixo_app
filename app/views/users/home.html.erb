@@ -123,6 +123,10 @@
 .space13{
 	height:250px;
 }
+
+.inline-block{
+	display:inline-block;
+}
 </style>
 
 
@@ -150,21 +154,21 @@
 			<div class=" col-lg-8 absolute">
 				<h3 class="start"><%= sanitize Startup.last.title %></h3>
 				<p > <%= sanitize Startup.last.description %></p>
-				<%#= image_tag(Startup.last.image, style:"width:100%", :class => "img_preview")%>
-				<img alt="Assets" src="/assets/circle1.png">
+				<%= image_tag(Startup.last.image, style:"width:100%", :class => "img_preview")%>
+				<!-- <img alt="Assets" src="/assets/circle1.png"> -->
 			</div>
 	</div>	
 			<div class="row">
 				<div class="col-lg-4 absolute1"  style="background-color:#FFFFFF">
-					<h3>Startup</h3>
+					<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block">Startup</h3>
 					<p>Get your MVP built fast, test it on the market, pivot if necessary, and scale to a mature product with our award-winning team. </p>
 				</div>
 				 <div class="col-lg-4 absolute2"  style="background-color:#FFFFFF">
-					<h3>Growing</h3>
+					<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block">Growing</h3>
 					<p>Get your MVP buit fast test it on the market, pivot if necesssary, and scale to a mature product with out award-winning team.</p>
 				</div> 
 				 <div class="col-lg-4 absolute3"  style="background-color:#FFFFFF">
-					<h3>Enterprise</h3>
+					<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block">Enterprise</h3>
 					<p>Get your MVP buit fast test it on the market, pivot if necesssary, and scale to a mature product with out award-winning team.</p>
 				</div> 
 		  </div>

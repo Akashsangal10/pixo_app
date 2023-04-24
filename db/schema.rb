@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_04_11_133442) do
+ActiveRecord::Schema[7.0].define(version: 2023_04_24_120845) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -130,6 +130,12 @@ ActiveRecord::Schema[7.0].define(version: 2023_04_11_133442) do
     t.string "description1"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "title2"
+    t.string "description2"
+    t.string "title3"
+    t.string "description3"
+    t.string "title4"
+    t.string "description4"
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
