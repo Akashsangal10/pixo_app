@@ -76,5 +76,5 @@ gem 'devise'
 gem 'activeadmin'
 gem 'sass-rails'
 gem 'activeadmin_quill_editor'
-# gem "font-awesome-rails"
+gem "font-awesome-rails"
 # gem "font-awesome-sass", "~> 6.4.0"
