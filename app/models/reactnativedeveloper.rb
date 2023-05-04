@@ -1,0 +1,2 @@
+class Reactnativedeveloper < ApplicationRecord
+end

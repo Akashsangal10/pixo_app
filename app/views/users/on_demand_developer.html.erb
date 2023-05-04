@@ -1,0 +1,317 @@
+<style>
+	.space1{
+		margin-left:188px;
+		margin-right: 188px;
+		padding-top: 83px;
+		padding-left: 200px;
+	}
+
+	.space2{
+		padding-left: 100px;
+		padding-bottom: 94px;
+	}
+	.space3{
+		padding-top:85px;
+		margin-left: 75px;
+		margin-right:75px;
+	}
+	.space4{
+		padding-right:31px;
+	}
+	.space5{
+		margin-top: 64px;
+		margin-left: 75px;
+		margin-right: 75px;
+	}
+	.line-margin{
+		margin-top:30px;
+	}
+	.different-type-demand{
+		margin-top: 74px;
+		margin-left: 188px;
+		margin-right: 188px;
+		margin-bottom: 11px;
+		padding-left: 80px;
+	}
+	.different-type-demand1{
+		margin-left:75px;
+		padding-right: 75px;
+	}
+	.different-type-demand2{
+		margin-top:45px;
+		margin-left:75px;
+		padding-right:75px;
+	}
+	.different-type-demand3{
+		margin-top:14px;
+		margin-left:75px;
+		padding-right:75px;
+	}
+	.different-deman-demand4{
+		margin-right:30px;
+	}
+	.react-native-developer{
+/*		margin-top:69px;*/
+		padding-top:72px;
+	}
+	.react-native-developer1{
+		margin-left:188px;
+		margin-right: 188px;
+		padding-left: 80px;
+/*		padding-top:72px;*/
+
+	}
+	.react-native-developer2{
+		margin-left:185px;
+		margin-right: 185px;
+/*		padding-bottom: 72px;*/
+	}
+	.reactnavtive-hiring{
+		margin-left:75px;
+		margin-top: 83;	
+	}
+	.reactnavtive-hiring-margin{
+		margin-left:30px;
+	}
+	.reactnative-margin{
+		margin-top:72px;
+		padding-left:30px;
+		padding-right:30px;
+	}
+	.reactnative-margin1{
+		padding: ;-left:30px;
+		padding-right:30px;
+	}
+
+	.absolute{
+		position: relative;
+		
+	}
+
+
+
+.average_experience {
+    height: 250px;
+/*    margin-top: -122px;*/
+    z-index: 10;
+    position: absolute;
+    margin-top: -390px;
+    margin-left: 10px;
+    transition:1s;
+}
+
+.Transparency{
+	height: 250px;
+    z-index: 10;
+    position: absolute;
+    margin-top: -390px;
+    margin-left: 350px;
+    transition:1s;	
+}
+
+.Flexible{
+	height: 250px;
+    z-index: 10;
+    position: absolute;
+    margin-top: -390px;
+    margin-left: 680px;
+    transition:1s;	
+}
+
+.No-Obligation{
+	height: 250px;
+    z-index: 10;
+    position: absolute;
+    margin-top: -340px;
+    margin-left: 20px;
+    transition:1s;
+}
+
+.Integrity{
+	height: 250px;
+    z-index: 10;
+    position: absolute;
+    margin-top: -340px;
+    margin-left: 350px;
+    transition:1s;
+}
+.Skilled{
+	height: 250px;
+    z-index: 10;
+    position: absolute;
+    margin-top: -340px;
+    margin-left: 680px;
+    transition:1s;
+}
+.Deadlines{
+	height: 250px;
+    z-index: 10;
+    position: absolute;
+    margin-top: -290px;
+    margin-left: 20px;
+    transition:1s;
+}
+.Technology{
+	height: 250px;
+    z-index: 10;
+    position: absolute;
+    margin-top: -290px;
+    margin-left: 350px;
+    transition:1s;
+}
+</style>
+
+
+<div style="background-color:#d9fcf7">
+	<h3 class="space1">On-Demand Developers</h3>
+	<p class="space2">We provide Developers that connects businesses and individuals with top-tier developers for their software development needs.</p>
+</div>
+
+
+<div class="row space3">
+	<div class="col-lg-8">
+		<h3><%= sanitize Ondemandhiring.last.title %></h3>
+		<p class="space4"><%= sanitize Ondemandhiring.last.description  %></p>
+		<a class="btn  btn-primary" href="#">Talk to Our Expert </a>
+	</div>
+
+	<div class="col-lg-4">
+		<%= image_tag(Ondemandhiring.last.image, style: 'width:50%') %>
+	</div>
+	<div class="row">
+		<hr class="line-margin">
+		<p class="space5"><%= sanitize Ondemandhiring.last.description1 %></p>
+	</div>
+</div>
+
+<div class="row", style="background-color:#f2eddf">
+	<h3 class="different-type-demand"><%= sanitize DifferentTypeDevelopment.last.title %></h3>
+	<p class="different-type-demand1"><%= sanitize DifferentTypeDevelopment.last.description %></p>
+	<div class="row different-type-demand2">
+			<div class="col-lg-5 different-deman-demand4">
+				<h5><%= sanitize DifferentTypeDevelopment.last.title1 %></h5>
+				<p><%= sanitize DifferentTypeDevelopment.last.description1 %></p>
+			</div>
+
+			<div class="col-lg-5">
+				<h5><%= sanitize DifferentTypeDevelopment.last.title2 %></h5>
+				<p><%= sanitize DifferentTypeDevelopment.last.description2 %></p>
+			</div>
+	</div>
+
+	<div class="row different-type-demand3">
+		<div class="col-lg-5 different-deman-demand4">
+			<h5><%= sanitize DifferentTypeDevelopment.last.title3 %></h5>
+			<p><%= sanitize DifferentTypeDevelopment.last.description3 %></p>
+		</div>
+		<div class="col-lg-5">
+			<h5><%= sanitize DifferentTypeDevelopment.last.title4 %></h5>
+			<p><%= sanitize DifferentTypeDevelopment.last.description4 %></p>
+		</div>
+	</div>
+</div>
+
+
+<div class="react-native-developer reactnavtive-hiring">
+	<h5 class="react-native-developer1"><%= sanitize Reactnativedeveloper.last.title %></h5>
+	<p class="react-native-developer2"><%= sanitize Reactnativedeveloper.last.description %></p>
+	<div class="row">
+		<div class="col-lg-3 absolute", style="background-color:#ffeddb">
+			<h5 class="reactnative-margin"><%= sanitize Reactnativedeveloper.last.title1 %></h5>
+			<p class="reactnative-margin1"><%= sanitize Reactnativedeveloper.last.description1 %></p>
+		</div>
+
+		<div class="col-lg-3 reactnavtive-hiring-margin absolute", style="background-color:#ebffdb">
+			<h5 class="reactnative-margin"><%= sanitize Reactnativedeveloper.last.title2 %></h5>
+			<p class="reactnative-margin1"><%= sanitize Reactnativedeveloper.last.description2 %></p>
+		</div>
+
+		<div class="col-lg-3 reactnavtive-hiring-margin absolute", style="background-color:#b8e0f2;">
+			<h5 class="reactnative-margin"><%= sanitize Reactnativedeveloper.last.title3 %></h5>
+			<p class="reactnative-margin1"><%= sanitize Reactnativedeveloper.last.description3 %></p>
+		</div>
+
+	</div>
+
+	<div class="row">
+			<div class="col-lg-4 average_experience">
+				<img alt="Assets" src="/assets/Vector.png">
+			</div>
+			<div class="col-lg-4 Transparency"  >
+				<img alt="Assets" src="/assets/Vector.png">
+			</div> 
+			<div class="col-lg-4 Flexible">
+				<img alt="Assets" src="/assets/Vector.png">
+			</div> 
+	</div>
+</div>
+
+
+
+
+<div class="react-native-developer reactnavtive-hiring">
+	
+	<div class="row">
+		<div class="col-lg-3 absolute", style="background-color:#ffeddb">
+			<h5 class="reactnative-margin"><%= sanitize Reactnativedeveloper.last.title4 %></h5>
+			<p class="reactnative-margin1"><%= sanitize Reactnativedeveloper.last.description4 %></p>
+		</div>
+
+		<div class="col-lg-3 reactnavtive-hiring-margin absolute", style="background-color:#ebffdb">
+			<h5 class="reactnative-margin"><%= sanitize Reactnativedeveloper.last.title5 %></h5>
+			<p class="reactnative-margin1"><%= sanitize Reactnativedeveloper.last.description5 %></p>
+		</div>
+
+		<div class="col-lg-3 reactnavtive-hiring-margin absolute", style="background-color:#b8e0f2;">
+			<h5 class="reactnative-margin"><%= sanitize Reactnativedeveloper.last.title6 %></h5>
+			<p class="reactnative-margin1"><%= sanitize Reactnativedeveloper.last.description6 %></p>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-4 No-Obligation">
+			<img alt="Assets" src="/assets/Vector.png">
+		</div>
+		<div class="col-lg-4 Integrity">
+			<img alt="Assets" src="/assets/Vector.png">
+		</div> 
+		<div class="col-lg-4 Skilled">
+			<img alt="Assets" src="/assets/Vector.png">
+		</div> 
+	</div>
+
+</div>
+
+
+
+
+<div class="react-native-developer reactnavtive-hiring">
+	
+	<div class="row">
+		<div class="col-lg-3 absolute", style="background-color:#ffeddb">
+			<h5 class="reactnative-margin"><%= sanitize Reactnativedeveloper.last.title7 %></h5>
+			<p class="reactnative-margin1"><%= sanitize Reactnativedeveloper.last.description7 %></p>
+		</div>
+
+		<div class="col-lg-3 reactnavtive-hiring-margin absolute", style="background-color:#ebffdb">
+			<h5 class="reactnative-margin"><%= sanitize Reactnativedeveloper.last.title8 %></h5>
+			<p class="reactnative-margin1"><%= sanitize Reactnativedeveloper.last.description8 %></p>
+		</div>
+
+	</div>
+
+	<div class="row">
+			<div class="col-lg-4 Deadlines">
+				<img alt="Assets" src="/assets/Vector.png">
+			</div>
+			<div class="col-lg-4 Technology"  >
+				<img alt="Assets" src="/assets/Vector.png">
+			</div> 
+	</div>
+
+</div>
+
+
+<%= render "feature1" %>
+<%= render "form3" %>
+<%= render "footer" %>

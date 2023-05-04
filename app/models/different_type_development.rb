@@ -1,0 +1,2 @@
+class DifferentTypeDevelopment < ApplicationRecord
+end
