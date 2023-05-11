@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_03_120957) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_08_092106) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -73,6 +73,16 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_03_120957) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "careers", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "title1"
+    t.string "description1"
+    t.string "description2"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "different_type_developments", force: :cascade do |t|
     t.string "title"
     t.string "description"
@@ -94,6 +104,26 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_03_120957) do
     t.string "country"
     t.string "skype"
     t.text "message"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "joings", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "title1"
+    t.string "description1"
+    t.string "desription2"
+    t.string "title2"
+    t.string "description3"
+    t.string "title3"
+    t.string "description4"
+    t.string "title4"
+    t.string "description5"
+    t.string "title5"
+    t.string "description6"
+    t.string "title6"
+    t.string "description7"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -193,6 +223,25 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_03_120957) do
     t.string "description3"
     t.string "title4"
     t.string "description4"
+  end
+
+  create_table "work_benefits", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "title1"
+    t.string "description1"
+    t.string "title2"
+    t.string "description2"
+    t.string "title3"
+    t.string "description3"
+    t.string "title4"
+    t.string "description4"
+    t.string "title5"
+    t.string "description5"
+    t.string "title6"
+    t.string "description6"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "works", force: :cascade do |t|

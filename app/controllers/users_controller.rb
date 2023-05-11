@@ -32,6 +32,9 @@ class UsersController < ApplicationController
 	def on_demand_developer
 	end
 
+	def career
+	end
+
 	private
 
 	def inqury_params

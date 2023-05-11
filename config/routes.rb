@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get "users/reactjs", to: "users#reactjs", as: :"reactjs"
   get "users/rorservice", to: "users#rorservice", as: :"ror"
   get "users/on_demand_developer", to: "users#on_demand_developer", as: :"on_demand_developer"
+  get "users/career", to: "users#career", as: :"career"
 end

@@ -183,13 +183,15 @@
 }
 
 /* smartphones, portrait-iphone, portrait 480x320 phones (Android) */
-@media (max-width:480px){
-
+@media (max-width:768px){
+	.start{
+		width:100%;
+	}
 } 
 </style>
 
 
-
+<body>
 
 <div class="container main">
 	<div class="row space6">
@@ -206,8 +208,6 @@
 
 <!-- ===== -->
 <%= render "feature" %>
-
-
 
 
 <div class="card space10"  style="background-color:#d9fcf7">
@@ -289,4 +289,4 @@
 
 <%= render "footer" %>
 
-
+</body>

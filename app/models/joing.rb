@@ -1,0 +1,2 @@
+class Joing < ApplicationRecord
+end
