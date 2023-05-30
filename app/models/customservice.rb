@@ -1,0 +1,2 @@
+class Customservice < ApplicationRecord
+end

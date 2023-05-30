@@ -1,5 +1,7 @@
+<html>
+<header>
 <style>
-
+   
 
 .start{
 	margin-left: 185;
@@ -8,24 +10,24 @@
 
 .img_preview {
 /*	margin-right: 30px;*/
-    margin: 30px;
-    height: 275px;
-    width: 500px;
+    margin: 2em;
+    height: 17.18rem;
+    width: 31.25rem;
 }
 
 .absolute{
 	position: relative;
-	height: 500px;
-	left: 200px;
+	height: 31.25rem
+	left: 12.5rem
 }
 
 .absolute1 {
-    height: 150px;
-    margin-top: -222px;
+    height: 9.37rem;
+    margin-top: -13.87rem;
     z-index: 10;
     position: absolute;
-    margin-top: -222px;
-    margin-left: 10px;
+    margin-top: -13.87rem;
+    margin-left: 0.0625em;
     transition:1s;
 }
 
@@ -35,12 +37,12 @@
 }
 
 .absolute2{
-	height: 150px;
-    margin-top: -222px;
+	height: 9.37rem;
+    margin-top: -13.87em;
     z-index: 10;
     position: absolute;
-    margin-top: -222px;
-    margin-left: 408px;
+    margin-top: -13.87em;
+    margin-left: 25.5em;
     transition:1s;
 }
 
@@ -50,12 +52,12 @@
 }
 
 .absolute3{
-	height: 150px;
-    margin-top: -222px;
+	height: 9.37rem;
+    margin-top: -13.87em;
     z-index: 10;
     position: absolute;
-    margin-top: -222px;
-    margin-left: 800px;
+    margin-top: -13.87em;
+    margin-left: 50em;
     transition:1s;
 }
 
@@ -66,223 +68,205 @@
 
 #relative{
 	position: relative;
-	margin-left: 100px;
+	margin-left: 6.25rem;
 
 }
 
 .center{
-	margin-left: 500px;
+	margin-left: 31.25em;
 }
 
 .space{
-	margin-left: 200px;
+	margin-left: 12.5em;
 }
 
 .space1{
-	margin-top: 50px;
-	margin-left: 60px;
+	margin-top: 3.125em;
+	margin-left: 3.75em;
 }
 
 .space2{
-	margin-left:550px;
-	margin-top:-140px; 
+	margin-left:31.25em;
+	margin-top:-8.75em; 
 }
 
 .space3{
-	margin-top: 40px;
+	margin-top: 2.5em;
 }
 
 .space4{
-	margin-top: 50px;
+	margin-top: 3.125em;
 }
 
 .space5{
-	margin-left: 200px;
+	margin-left: 12.5em;
 }
 .main{
-	width:1289px;
-	height: 271px;
-	margin-left: 76px;
-	margin-right: 75px;
+	width:80.5625rem;
+	height: 16.93rem;
+	margin-left: 4.76em;
+	margin-right: 4.68em;
 }
 
 .space6{
-	margin-top:96px;
+	margin-top:6em;
 }
 
 .space10{
-	margin-top:73px;
+	margin-top:4.56em;
 /*	padding-top: 87px;*/
 
 }
 .space11{
-	margin-top: 87px;
-	margin-left:30px;
-	margin-right:30px;
+	margin-top: 5.4375em;
+	margin-left:1.875em;
+	margin-right:1.875em;
 }
 .space13{
-	height:250px;
+	height:15.625rem;
 }
 
 .inline-block{
 	display:inline-block;
-	margin-left: 30px;
+	margin-left: 1.875em;
 }
 .space14{
-	margin-left:96px;
+	margin-left:6em;
 }
 .space15{
-	margin-top: 89px;
-	margin-left: 75px;
+	margin-top: 5.5625em;
+	margin-left: 4.6875em;
 }
 .space16{
-	margin-left:76px;
-	margin-top: 41px;
+	margin-left:4.75em;
+	margin-top: 2.56em;
 }
 .space17{
-	margin-left:30px;
-	margin-top: 41px;
+	margin-left:1.875em;
+	margin-top: 2.5625em;
 }
 
 .space18{
-	margin-top:89px;
+	margin-top:5.5625em;
 	
 }
 .space19{
-	margin-left:500px;
+	margin-left:31.25em;
 /*	margin-right:647px;*/
 }
 .space20{
-	margin-left:185px;
+	margin-left:11.5625em;
 }
- /*//////// Media Queryies ///////////////////*/
+ 
 
-/*big landscape, low resolution laptop and desktop */
-/*@media (min-width:1200px){
-
-}*/
-
-/*@media only screen and (max-width: 1140px){
-	
-}*/
-/*tablet, landscape, low resolution laptop and desktop*/
-/*@media (max-width: 990px){
-	.navbar-brand{
-		width: 100%;
-	}
-}*/
-
-/* portrait tablet, e-readers kindle, */
-@media (max-width: 800px){
-
-} 
-
-/* smartphones, Android phones, landscape iPhone */
-@media (max-width: 600px){
-
-}
-
-/* smartphones, portrait-iphone, portrait 480x320 phones (Android) */
-@media (max-width:768px){
-	.start{
-		width:100%;
-	}
-} 
 </style>
-
+</header>
 
 <body>
 
-<div class="container main">
-	<div class="row space6">
-		<div class="col-lg-10 ">
-			<h2 ><%= BusinessGrowth.last.title %></h2>
-			<p><%= BusinessGrowth.last.description %></p>
-			<a class="btn  btn-primary" href="#">Talk to Our Expert </a>
-		</div>
-		<div class="col-lg-2">
-			<%= image_tag(BusinessGrowth.last.image, style: 'width:100%')%>
-		</div>
+<section>
+	<div class="container main">
+			<div class="row space6">
+				<div class="col-sm-6 ">
+					<h2 ><%= BusinessGrowth.last.title %></h2>
+					<p><%= BusinessGrowth.last.description %></p>
+					<a class="btn  btn-primary" href="#">Talk to Our Expert </a>
+				</div>
+				<div class="col-sm-3 img1">
+					<%= image_tag(BusinessGrowth.last.image, style: 'width:30vw')%>
+				</div>
+			</div>
 	</div>
-</div>
+</section>
 
-<!-- ===== -->
+
 <%= render "feature" %>
 
-
-<div class="card space10"  style="background-color:#d9fcf7">
-	<div class="row space11">
-			<div class=" col-lg-8 absolute">
-				<h3 class="start"><%= sanitize Startup.last.title %></h3>
-				<p > <%= sanitize Startup.last.description %></p>
-				<%= image_tag(Startup.last.image, style:"width:100%", :class => "img_preview")%>
-				<!-- <img alt="Assets" src="/assets/circle1.png"> -->
-			</div>
-	</div>	
-			<div class="row">
-				<div class="col-lg-4 absolute1"  style="background-color:#FFFFFF">
-					<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block"><%= sanitize Startup.last.title1 %></h3>
-					<p class="space14"><%= sanitize Startup.last.description1 %> </p>
+<section>
+	<div class="card space10"  style="background-color:#d9fcf7">
+		<div class="row space11">
+				<div class=" col-sm-8 absolute">
+					<h3 class="start"><%= sanitize Startup.last.title %></h3>
+					<p > <%= sanitize Startup.last.description %></p>
+					<%= image_tag(Startup.last.image, style:"width:150%", :class => "img_preview")%>
+					<!-- <img alt="Assets" src="/assets/circle1.png"> -->
 				</div>
-				 <div class="col-lg-4 absolute2"  style="background-color:#FFFFFF">
-					<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block"><%= sanitize Startup.last.title2 %></h3>
-					<p class="space14"><%= sanitize Startup.last.description2 %></p>
-				</div> 
-				 <div class="col-lg-4 absolute3"  style="background-color:#FFFFFF">
-					<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block"><%= sanitize Startup.last.title3 %></h3>
-					<p class="space14"><%= sanitize Startup.last.description3 %></p>
-				</div> 
-		  </div>
-			
-</div>
-
-<div class="space15">
-	<h3 ><%= sanitize Work.last.title %></h3>
-	<p ><%= sanitize Work.last.description %></p>
-</div>
-<div class="row ">
-	<div class="col-lg-5 space16" style="background-color: #f5e3e1;">
-		<h4><%= sanitize Work.last.title1 %></h4>
-		<p><%= sanitize Work.last.description1 %></p>
+		</div>	
+				<div class="row">
+					<secton>
+					<div class="col-sm-4 absolute1"  style="background-color:#FFFFFF">
+						<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block"><%= sanitize Startup.last.title1 %></h3>
+						<p class="space14"><%= sanitize Startup.last.description1 %> </p>
+					</div>
+					 <div class="col-sm-4 absolute2"  style="background-color:#FFFFFF">
+						<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block"><%= sanitize Startup.last.title2 %></h3>
+						<p class="space14"><%= sanitize Startup.last.description2 %></p>
+					</div> 
+					 <div class="col-sm-4 absolute3"  style="background-color:#FFFFFF">
+						<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block"><%= sanitize Startup.last.title3 %></h3>
+						<p class="space14"><%= sanitize Startup.last.description3 %></p>
+					</div> 
+				</secton>
+			  </div>		
 	</div>
+</section>
 
-	<div class="col-lg-5 space17" style="background-color:#d4f5ab">
-		<h4><%= sanitize Work.last.title2 %></h4>
-		<p><%= sanitize Work.last.description2 %></p>
+<section>
+	<div class="space15">
+		<h3 ><%= sanitize Work.last.title %></h3>
+		<p ><%= sanitize Work.last.description %></p>
 	</div>
-</div>
+</section>
 
+<section>
+	<div class="row ">
+		<div class="col-sm-5 space16" style="background-color: #f5e3e1;">
+			<h4><%= sanitize Work.last.title1 %></h4>
+			<p><%= sanitize Work.last.description1 %></p>
+		</div>
 
-<div class="row ">
-	<div class="col-lg-5 space16" style="background-color:#d9fcf7">
-		<h4><%= sanitize Work.last.title3 %></h4>
-		<p><%= sanitize Work.last.description3 %></p>
+		<div class="col-sm-5 space17" style="background-color:#d4f5ab">
+			<h4><%= sanitize Work.last.title2 %></h4>
+			<p><%= sanitize Work.last.description2 %></p>
+		</div>
 	</div>
+</section>
 
-	<div class="col-lg-5 space17" style="background-color:#bbeefa">
-		<h4><%= sanitize Work.last.title4 %></h4>
-		<p><%= sanitize Work.last.description4 %>  </p>
+<section>
+	<div class="row ">
+		<div class="col-sm-5 space16" style="background-color:#d9fcf7">
+			<h4><%= sanitize Work.last.title3 %></h4>
+			<p><%= sanitize Work.last.description3 %></p>
+		</div>
+
+		<div class="col-sm-5 space17" style="background-color:#bbeefa">
+			<h4><%= sanitize Work.last.title4 %></h4>
+			<p><%= sanitize Work.last.description4 %>  </p>
+		</div>
 	</div>
-</div>
+</section>
 
+<section>
+	<div class="row space18">
+	  <h3 class="space19"><%= sanitize OurWork.last.title %></h3>
+	  <p class=""><%= sanitize OurWork.last.description %></p>
+	</div>
+</section>
 
-<div class="row space18">
-  <h3 class="space19"><%= sanitize OurWork.last.title %></h3>
-  <p class=""><%= sanitize OurWork.last.description %></p>
-</div>
+<section>
+	<div class="row space13" style="background-color:#c6f7ea">
+	  	<div class="col-sm-6 space1" >
+	  		
+	  			<h4><%= sanitize OurWork.last.heading %></h4>
+	  			<h5><%= sanitize OurWork.last.subheading %></h5>
+	  			<p><%= sanitize OurWork.last.description1 %></p>
+	  	</div>
 
-<div class="row space13" style="background-color:#c6f7ea">
-  	<div class="col-lg-6 space1" >
-  		
-  			<h4><%= sanitize OurWork.last.heading %></h4>
-  			<h5><%= sanitize OurWork.last.subheading %></h5>
-  			<p><%= sanitize OurWork.last.description1 %></p>
-  	</div>
-
-  	<div class="col-lg-5">
-  		<%= image_tag(OurWork.last.image, style:"width:90% ")%>
-  	</div>
-</div>
+	  	<div class="col-sm-5">
+	  		<%= image_tag(OurWork.last.image, style:"width:90% ")%>
+	  	</div>
+	</div>
+</section>
 
 
 
@@ -290,3 +274,4 @@
 <%= render "footer" %>
 
 </body>
+</html

@@ -1,0 +1,2 @@
+class CustomServicedeveloper < ApplicationRecord
+end

@@ -1,15 +1,11 @@
 <style>
-	.career{
+	.career {
 		padding-left:90px;
 		margin-top:83px;
-/*		padding-left: 600px;*/
 	}
+
 	 .career-our-company1{
-/*	 	margin-top:10px;*/
 	 	margin-left:489px;
-/*	 	margin-right:190px;*/
-/*	 	padding-left:188px;*/
-/*	 	margin-bottom:103px;*/
 	}
 
 	.promising-it-company{
@@ -52,7 +48,7 @@
 		padding-left:400px;
 	}
 	.react-natve{
-		padding-top:119px;
+/*		padding-top:119px;*/
 		margin-left:75px;
 	}
 	.location{
@@ -79,6 +75,7 @@
 		margin-left:75px;
 	}
 	.des{
+		padding-top:86px;
 		margin-left:75px;
 	}
 </style>
@@ -87,6 +84,7 @@
 	<h3 class="career"><%= sanitize Career.last.title %></h3>
 	<p class="career-our-company1"><%= sanitize Career.last.description %></p>	
 </div>
+
 
 <div class="promising-it-company">
 	<h3><%= sanitize Career.last.title1 %></h3>
@@ -140,6 +138,7 @@
 </div>
 
 <div>
+	<input id="ch" type="checkbox">
 	<h5 class="join"><%= sanitize Joing.last.title %></h5>
 	<p class="join1"><%= sanitize Joing.last.description %></p>
 	<h5 class="react-natve"><%= sanitize Joing.last.title1 %></h5>
@@ -151,9 +150,11 @@
 	<p ><%= sanitize Joing.last.description4 %></p>
 	<h5 class="des"><%= sanitize Joing.last.title5 %></h5>
 	<p><%= sanitize Joing.last.description5 %></p>
-	<h5 class="des"><%= sanitize Joing.last.title6 %></h5>
+	<h5 class="hiring-description3"><%= sanitize Joing.last.title6 %></h5>
 	<p><%= sanitize Joing.last.description6 %></p>
+	<label for="ch">Read more</label>
 </div>
 
+<%= render "feature1" %>
 
-	
+<%= render "footer" %>

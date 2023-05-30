@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_05_08_092106) do
+ActiveRecord::Schema[7.0].define(version: 2023_05_29_071151) do
   create_table "active_admin_comments", force: :cascade do |t|
     t.string "namespace"
     t.text "body"
@@ -83,6 +83,21 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_08_092106) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "custom_servicedevelopers", force: :cascade do |t|
+    t.string "title"
+    t.string "description1"
+    t.string "description2"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "customservices", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "different_type_developments", force: :cascade do |t|
     t.string "title"
     t.string "description"
@@ -94,6 +109,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_08_092106) do
     t.string "description3"
     t.string "title4"
     t.string "description4"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "industor_leader_softwares", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -148,6 +170,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_08_092106) do
     t.string "description3"
     t.string "title4"
     t.string "description4"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "our_technologies", force: :cascade do |t|
+    t.string "title"
+    t.string "subtitle"
+    t.string "title1"
+    t.string "description1"
+    t.string "title2"
+    t.string "description2"
+    t.string "title3"
+    t.string "description3"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -240,6 +275,19 @@ ActiveRecord::Schema[7.0].define(version: 2023_05_08_092106) do
     t.string "description5"
     t.string "title6"
     t.string "description6"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "work_flows", force: :cascade do |t|
+    t.string "title"
+    t.string "description"
+    t.string "title1"
+    t.string "description1"
+    t.string "title2"
+    t.string "description2"
+    t.string "title3"
+    t.string "description3"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

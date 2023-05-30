@@ -1,0 +1,2 @@
+class IndustorLeaderSoftware < ApplicationRecord
+end

@@ -5,105 +5,175 @@
 /*	margin-bottom: 94px;*/
 /*position: absolute;*/
 /*width: 1440px;*/
-height: 500px;
+/*height: 500px;
 left: 0px;
-top: 85px;
+top: 85px;*/
 /*margin-bottom:94px;*/
 }
 
-@media (min-width: 992px)
+/*@media (min-width: 992px)
 .col-lg-12 {
     flex: 0 0 auto;
     width: 100%;
     height: 240px;
-}
+}*/
 
 .space2{
-	margin-top:85px;
-	margin-right:188px;
+	margin-top:83px;
 	margin-left:188px;
+	padding-left:90px;
 }
 .space3{
-	margin-top: 15px;
-	margin-left: 189px;
-	margin-right:190px;
-	padding-bottom: 94;
+	margin-left: 189px;	
+	padding-left:90px;
 }
 
 .space4{
 /*	margin-top:79px;*/
-
+padding-bottom:90px;
 }
 
-.space5{
-	margin-top:79px;
-	margin-left:405px;
-	margin-right:405px;
+.ourtechnology{
+	/*margin-top:4.9375em;
+	margin-left:25.3125em;
+	margin-right:25.3125em;*/
+	text-align:center;
+	padding-top:75px;
 }
-.space6 {
-    margin-left: 351px;
+.ourtechnology1{
+	text-align:center;
+	padding-left:75px;
+/*    margin-left: 21.9375em;*/
+    
 }
 
 .space8{
-	margin-top: 69px;
+	margin-top: 4.3125em;
+}
+.workflow{
+	margin-top:90px;
+
 }
 
 .space10{
-/*    margin-top: 69px;*/
-    margin-left: 340px;
-/*    margin-right: 75px;*/
+	text-align: center;
 }
 
 .space11{
-	margin-left:30px;
-	margin-right:30px;
+	margin-left:1.875em;
+	margin-right:1.875em;
 }
 .space12{
-	margin-left:75px;
+	margin-left:4.6875em;
 }
 
 .space13{
-	margin-left:50px;
+	margin-left:3.125em;
 }
 .space14{
-	margin-left:220px;
+	margin-left:13.75em;
 }
 
-/*.dff{
-	display:inline-block;
-}*/
+.custom-software-service{
+	margin-top:83px;
+	margin-left:75px;
+	margin-right:3px;
+	margin-bottom:75px;
+}
+.IndustorLeaderSoftware{
+	padding-top:75px;
+}
+.IndustorLeaderSoftware1{
+	padding-top:10px;
+}
+.workflow{
+	text-align:center;
+}
+
+.absolute{
+	height: 9.37rem;
+    z-index: 10;
+    position: absolute;
+    margin-top: -26.87em;
+    margin-left: 2.0em;
+    transition:1s;
+}
+
+.absolute1{
+	height: 9.37rem;
+    z-index: 10;
+    position: absolute;
+    margin-top: -26.87em;
+    margin-left: 20.0em;
+    transition:1s;
+}
+
+.absolute2{
+	height: 9.37rem;
+    z-index: 10;
+    position: absolute;
+    margin-top: -26.87em;
+    margin-left: 40.0em;
+    transition:1s;
+}
+
+.workflow1{
+	padding-top:30px;
+}
 
 </style>
-<div class="card .space" style="background-color: #d9fcf7;">
+<div class="card " style="background-color: #d9fcf7;">
 	<div class="row " >	
 		<div class="col-lg-12">	
-			<h3 class="space2">Custom software development services</h3>
-			<p class="space3">We can build a website, web application or mobile app for you using Ruby on Rails. We can also check your application for bugs, errors and inefficiencies as part of our custom software development service.  </p>
+			<h3 class="space2"><%=  sanitize Customservice.last.title %></h3>
+			<p class="space3"><%= sanitize Customservice.last.description %></p>
 		</div>		
 	</div>
 </div>	
 
-<%= render "feature" %>
+<%= render "feature1" %>
 
-<div class="card space4" style="background-color: #e1eddf">
-	<h3 class="space5">Our Technologies</h3>
-	<p class="space6">Your idea, Our Expertise = Maximum Customer Success </p>
+<div class="row custom-software-service">
+	<div class="col-lg-5">
+		<h4><p><%= sanitize CustomServicedeveloper.last.title %></p></h4>
+		<p style="color:blue"><%= sanitize CustomServicedeveloper.last.description1 %></p>
+	</div>
+
+	<div class="col-lg-5">
+		<p><%= sanitize CustomServicedeveloper.last.description2 %></p>
+	</div>
+</div>
+
+
+<div class="row" style="background-color:#419157">
+	<div class="col-lg-6">
+		<img alt="Assets" src="/assets/Rectangle.png", style: width:18px>
+	</div>
+
+	<div class="col-lg-6" style="color:white;">
+		<h5 class="IndustorLeaderSoftware"><%= sanitize IndustorLeaderSoftware.last.title %></h5>
+		<p class="IndustorLeaderSoftware1"><%= sanitize IndustorLeaderSoftware.last.description %></p>
+	</div>
+</div>
+
+<div class=" space4" style="background-color: #e1eddf">
+	<h3 class="ourtechnology"><%= sanitize OurTechnology.last.title %></h3>
+	<p class="ourtechnology1"><%= sanitize OurTechnology.last.subtitle %> </p>
 	<div class="row">
 		<div class="col-lg-3 space12">
-			<h3>Ruby on Rails Development</h3>
-			<p>We are an IT vender working worldwide and capable of carrrying out your software initiative on any continent owing to our globle react and optimally distributed team, Our ROR developers build scalable and secure custom apps with responsive design, high provided numerous demanding customers in various segments with top-rating IT solution</p>
+			<h3><%= sanitize OurTechnology.last.title1  %></h3>
+			<p><%=  sanitize OurTechnology.last.description1 %></p>
 			<a class="btn  btn-primary" href="#">Talk to Our Expert</a>
 		</div>
 		<div class="col-lg-3 space13">
-			<h3>React Native Developer</h3>
-			<p>Prople your business growth with our ReactNative development services for ios, Android & window tailored to your needs.<br>
-				We provide custom ReactNative app development service as the fast and cost-effective options for mobile app projects. This technology allows using one team for both web and mobile applications, dramatically improving cost-efficient. React Native is championed by facebook and adopted by giants like Walmant, Bloomberg and Uber.
+			<h3><%= sanitize OurTechnology.last.title2  %></h3>
+			<p><%= sanitize OurTechnology.last.description2  %>
 			</p>
 			<a class="btn  btn-primary" href="#">Talk to Our Expert</a>
 		</div>
 		<div class="col-lg-3 space13">
-			<h3>React JS Developer</h3>
-			<p>We provides end-to-end development services and creates innovative web applications for startups and large-scale enterprises. Having full-scale expertise in this Javascript library, Our professionals create exceptional user interfaces for web & mobile applications. We provide dynamic and business-specific React Js solutions that handle synchronesation and data update wiuthout reloading. </p>
+			<h3><%= sanitize OurTechnology.last.title3  %></h3>
+			<p><%= sanitize OurTechnology.last.description3 %> </p>
 			<a class="btn  btn-primary" href="#">Talk to Our Expert</a>
 		</div>
 	</div>
@@ -111,20 +181,31 @@ top: 85px;
 
 
 <div class="container space8">
-	<h3 class="space10">Our workflow principles</h3>
-	<p>We deliver easy-and-cheap-to-cheap-to-maintain product within the agreed timeframe and budget using an optimal technology stack</p>
-	<div class="row space12">
+	<h3 class="workflow"><%= sanitize WorkFlow.last.title %></h3>
+	<p><%= sanitize WorkFlow.last.description %></p>
+	<div class="row  workflow">
 		<div class="col-lg-3 ", style="background-color:#f7d2d2">
-			<h3>Control scope & budge</h3>
-			<p>To deliver projects within a specific timeframe and budget, we have a specific timeframe and budget, we have a preproject phase that involves all stakeholders. During this stage, we discuss every detail and aspect of the project and agree upon scope, schedule and cost. We then control those baselines by regularly reviswing the budget to actual costs.  </p>
+			<h6 class="workflow1"><%= sanitize WorkFlow.last.title1 %></h6>
+			<p><%= sanitize WorkFlow.last.description1 %></p>
 		</div>
 		<div class="col-lg-3 space13", style="background-color:#1ff2ba" >
-			<h3>Manage technology</h3>
-			<p>We carefully choose the tech stack to meet your expectations and specific business requirements. We prefer technologies that give our clients a competitive advantage as well as reduce development costs and shorten the time to market. Our goal is to help you meet your current needs and plan for the future.</p>
+			<h6 class="workflow1"><%= sanitize WorkFlow.last.title2 %></h6>
+			<p><%= sanitize WorkFlow.last.description2 %></p>
 		</div>
 		<div class="col-lg-3 space13", style="background-color:#a3eef7">
-			<h3>Save on maintenance</h3>
-			<p>Constantly updating your software is key to remaining competitive. Yet changes can be difficult and expensive. To make it cheaper and less steessful, we design your product property in the first place. Our code is easy to understand, modify and maintain. So you can add changes to the existing code easily.</p>
+			<h6 class="workflow1"><%= sanitize WorkFlow.last.title3 %></h6>
+			<p><%= sanitize WorkFlow.last.description3 %></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4 absolute">
+			<img alt="Assets" src="/assets/wallet.png">
+		</div>
+		<div class="col-lg-4 absolute1">
+			<img alt="Assets" src="/assets/technology.png">
+		</div>
+		<div class="col-lg-4 absolute2">
+			<img alt="Assets" src="/assets/save-money.png">
 		</div>
 	</div>
 </div>
@@ -134,29 +215,13 @@ top: 85px;
 	<p class="space14">Benefits of choosing Us AS Your Development Company</p>
 	<div class="row">
 		<div class="col-lg-8" >
-			<!-- <div class="row ">
-				<h4 >Agile</h4>
-				<p>We folllow the agile approach, working one or two week iteations, sprints and maintain constant communication between stakeholders. </p>
-			</div>
 			
-			<div class="row">
-				<h4>Transparency</h4>
-				<p>We provide access to all the necessary tools to track progress, making demos at the end of every srpint, and hold regular meeting.</p>
-			</div>
-			<div>
-				<h4>Teamwork</h4>
-				<p>We believe that mutual trust during work leads to big results, cohesion makes us work as a single mechanism that to a great result</p>
-			</div>
-			<div class="row">
-				<h4>Flexibility</h4>
-				<p>We're very flexible in how we work, it doen't matter do you need to augment your team or create a product from scratch, we have a solution.</p>
-			</div> -->
 			<%= sanitize OurOpprach.last.title %>
 			
 		</div>
 	
 		<div class="col-lg-4">
-			<%= image_tag(Startup.last.image, style:"width:100%")%>
+			<%= image_tag(Startup.last.image, style:"width:140%")%>
 		</div>
 	</div>
 </div>
