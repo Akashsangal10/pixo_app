@@ -4,8 +4,8 @@
    
 
 .start{
-	margin-left: 185;
-	margin-right: 185;
+	/*margin-left: 185;
+	margin-right: 185;*/
 }
 
 .img_preview {
@@ -157,7 +157,8 @@
 .space20{
 	margin-left:11.5625em;
 }
- 
+
+
 
 </style>
 </header>
@@ -188,7 +189,9 @@
 				<div class=" col-sm-8 absolute">
 					<h3 class="start"><%= sanitize Startup.last.title %></h3>
 					<p > <%= sanitize Startup.last.description %></p>
-					<%= image_tag(Startup.last.image, style:"width:150%", :class => "img_preview")%>
+					<img alt="Assets" src="/assets/office-view 1 (2).png" width="1000" 
+     				height="400" >
+					<%#= image_tag(Startup.last.image, style:"width:150%", :class => "img_preview")%>
 					<!-- <img alt="Assets" src="/assets/circle1.png"> -->
 				</div>
 		</div>	

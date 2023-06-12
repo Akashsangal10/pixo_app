@@ -1,0 +1,2 @@
+class OndemandForm < ApplicationRecord
+end

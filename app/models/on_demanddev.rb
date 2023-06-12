@@ -1,0 +1,2 @@
+class OnDemanddev < ApplicationRecord
+end

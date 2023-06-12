@@ -1,11 +1,12 @@
 <style>
-	.career {
-		padding-left:90px;
-		margin-top:83px;
+	.career{
+/*		margin-left:400px;*/
+/*		padding-left:400px;*/
+		padding-top:84px;
 	}
 
 	 .career-our-company1{
-	 	margin-left:489px;
+/*	 	margin-left:489px;*/
 	}
 
 	.promising-it-company{
@@ -78,10 +79,60 @@
 		padding-top:86px;
 		margin-left:75px;
 	}
+	.inline{
+	display:inline-block;
+	position: absolute
+	height: 9.37rem;
+    position: absolute;
+    margin-left: 4.30em;
+	}
+	.inline1{
+	display:inline-block;
+	position: absolute
+	height: 9.37rem;
+    position: absolute;
+    margin-left: 4.40em;
+    margin-top:12.50em;
+	}
+	.inline2{
+	display:inline-block;
+	position: absolute
+	height: 9.37rem;
+    position: absolute;
+    margin-left: 16.80em;
+    margin-top:12.50em;
+	}
+	.inline3{
+		display:inline-block;
+		position: absolute
+		height: 9.37rem;
+	    position: absolute;
+	    margin-left: 17.00em;
+/*	    margin-top:.50em;*/
+	}
+	.inline4{
+		display:inline-block;
+		position: absolute
+		height: 9.37rem;
+	    position: absolute;
+	    margin-left: 17.00em;
+	    margin-top: 12.50em;
+	}
+	.inline5{
+		display:inline-block;
+		position: absolute
+		height: 9.37rem;
+	    position: absolute;
+	    margin-left: 17.00em;
+/*	    margin-top: 12.50em;*/
+	}
+	.inline5{
+		display:inline-block;
+	}
 </style>
 
 <div class="row", style="background-color:#d9fcf7">
-	<h3 class="career"><%= sanitize Career.last.title %></h3>
+	<h3 class="career" ><%= sanitize Career.last.title %></h3>
 	<p class="career-our-company1"><%= sanitize Career.last.description %></p>	
 </div>
 
@@ -138,7 +189,34 @@
 </div>
 
 <div>
-	<input id="ch" type="checkbox">
+	<div class="row">
+		<div class="col-lg-2">
+			<%#= image_tag(OurWork.last.image, style:"width:90% ")%>
+			<img alt="Assets" src="/assets/Rectangle 49.png">
+		</div>
+			<div class="col-lg-2">
+				<img alt="Assets" src="/assets/Rectangle 50.png" width="400" 
+     				height="200" class="inline">
+     			<img alt="Assets" src="/assets/Rectangle 55.png" width="200" 
+     				height="200" class="inline1">
+     			<img alt="Assets" src="/assets/Rectangle 50.png" width="200" 
+     				height="200" class="inline2">
+			</div>
+			<div class="col-lg-2">
+				<img alt="Assets" src="/assets/Rectangle 53.png" width="200" 
+     				height="200" class="inline3">
+     			<img alt="Assets" src="/assets/Rectangle 51.png" width="200" 
+     				height="200" class="inline4">
+			</div>
+			<div class="col-lg-2">
+				<img alt="Assets" src="/assets/Rectangle 52.png" width="300" 
+     				height="400" class="inline5">
+			</div>
+	</div>
+</div>
+
+<div>
+	<!-- <input id="ch" type="checkbox"> -->
 	<h5 class="join"><%= sanitize Joing.last.title %></h5>
 	<p class="join1"><%= sanitize Joing.last.description %></p>
 	<h5 class="react-natve"><%= sanitize Joing.last.title1 %></h5>
@@ -153,6 +231,55 @@
 	<h5 class="hiring-description3"><%= sanitize Joing.last.title6 %></h5>
 	<p><%= sanitize Joing.last.description6 %></p>
 	<label for="ch">Read more</label>
+</div>
+
+<hr>
+
+<h5>Quality Analyst</h5>
+<div class ="row">
+	<div class="col-lg-10 ">
+		<p ><ul class="location"><li class=""> Experience : 1-3 Yr</li> <li class="experience">Location : Indore</li> <li class="experience">Full Time job</li></ul></p>
+	</div>
+	<div class="col-lg-2">
+		<a class="btn  btn-primary " href="#">Apply</a>
+	</div>
+	<p>We are looking for a passionate Test Engineer/QA Engineer that leverages new technologies focused on creating compelling mobile Apps.</p>
+</div>
+<hr>
+
+<div class ="row">
+	<h5>Senior React.js Developer</h5>
+	<div class="col-lg-10">
+		<p ><ul class="location"><li class=""> Experience : 1-3 Yr</li> <li class="experience">Location : Indore</li> <li class="experience">Full Time job</li></ul></p>
+	</div>
+	<div class="col-lg-2">
+		<a class="btn  btn-primary " href="#">Apply</a>
+	</div>
+	<p>We are looking for a Senior ReactJs Developer with the following expertise who can fulfill end-to-end responsibilities.</p>
+</div>
+<hr>
+
+<div class ="row">
+	<h5>IT Recruiter</h5>
+	<div class="col-lg-10">
+		<p ><ul class="location"><li class=""> Experience : 1-3 Yr</li> <li class="experience">Location : Indore</li> <li class="experience">Full Time job</li></ul></p>
+	</div>
+	<div class="col-lg-2">
+		<a class="btn  btn-primary " href="#">Apply</a>
+	</div>
+	<p>We are looking for an IT Recruiter with the following expertise who can fulfill end-to-end responsibilities.</p>
+</div>
+<hr>
+
+<div class ="row">
+	<h5>ROR Developer</h5>
+	<div class="col-lg-10">
+		<p ><ul class="location"><li class=""> Experience : 1-3 Yr</li> <li class="experience">Location : Indore</li> <li class="experience">Full Time job</li></ul></p>
+	</div>
+	<div class="col-lg-2">
+		<a class="btn  btn-primary " href="#">Apply</a>
+	</div>
+	<p>We are looking for a ROR Developer who can fulfill the given responsibilities with their expertise and knowledge.</p>
 </div>
 
 <%= render "feature1" %>

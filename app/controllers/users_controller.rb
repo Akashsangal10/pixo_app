@@ -17,19 +17,31 @@ class UsersController < ApplicationController
 		if @inquery.save
 			 redirect_to reactnative_path, notice: 'Query has been submitted successfully '
 		else 
-			render :new
+			redirect_to reactnative_path
 		end
 	end
 
-	def reactjs
-		
+	def ondemandform
+		p "--------------------------#{ondemand_param.inspect} ======================"
+		@ondemand = OndemandForm.new(ondemand_param)
+		p "==============#{@ondemand.inspect}--------------------------------"
+		if @ondemand.save
+			p "================================*******************************"
+			redirect_to on_demand_developer_path, notice: "Query has been submitted successfully"
+		else
+			redirect_to on_demand_developer_path
+		end
+	end
+
+	def reactjs	
 	end
 
 	def rorservice
-
+		# @ondemand_form = OndemandForm.new()
 	end
 
 	def on_demand_developer
+		@ondemand = OndemandForm.new()
 	end
 
 	def career
@@ -40,5 +52,10 @@ class UsersController < ApplicationController
 	def inqury_params
 		params.require(:inquery).permit(:fullname, :email, :country, :skype, :message)
 	end
+
+	def ondemand_param
+		params.require(:ondemand_form).permit(:firstname, :email, :country, :skype, :technologies, :resources_required, :message)
+		p "--------------------------"
+	end 
 
 end
