@@ -52,9 +52,9 @@ ActiveAdmin.register Work do
       row :description3
       row :title4
       row :description4
-      # row :image do |ad|
-      #   image_tag url_for(ad.image)
-      # end
+       # row :image do |ad|
+       #   image_tag url_for(ad.image)
+       # end
     end
   end
 

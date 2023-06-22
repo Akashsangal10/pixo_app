@@ -11,4 +11,6 @@ Rails.application.routes.draw do
   get "users/on_demand_developer", to: "users#on_demand_developer", as: :"on_demand_developer"
   get "users/career", to: "users#career", as: :"career"
   post "users/ondemandform", to: "users#ondemandform", as: :"ondemandform"
+  get "users/contactus", to: "users#contactus", as: :"contactus" 
+  post "users/contactform", to: "users#contactform", as: :"contactform"
 end

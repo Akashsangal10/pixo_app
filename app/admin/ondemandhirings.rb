@@ -33,9 +33,9 @@ show do
       row :description
       row :subtitle
       row :description1
-      # row :image do |ad|
-      #   image_tag url_for(ad.image)
-      # end
+      row :image do |ad|
+        image_tag url_for(ad.image)
+      end
     end
   end
 

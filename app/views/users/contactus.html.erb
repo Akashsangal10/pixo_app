@@ -1,0 +1,200 @@
+<style>
+	.contact{
+		padding-top:83px;
+		margin-left:500px;
+	}
+	.contact-p{
+		padding-left:350px;		
+		padding-bottom:105px;
+	}
+	.get_touch{
+		padding-top:73px;
+		margin-top:70px;
+		margin-left:180px;
+	}
+	.get_touch1{
+		margin-left:250px;
+		margin-bottom:46px;
+	}
+	.get_touch2{
+		margin-left:75px;
+	}
+	.get_touch3{
+		margin-left:90px;	
+	}
+	.pixo_with{
+		padding-top:74px;
+		padding-left:74px;
+	}
+	.pixo_with1{
+		padding-left:74px;	
+	}
+	.inline{
+		display:inline-block;
+	}
+	.trusted{
+		padding-top:42px;
+		padding-left:74px;
+	}
+	.logo{
+		padding-left:70px;
+	}
+
+	.absolute{
+		position: relative;
+		margin-top: 3.9em;
+    	margin-left: 1.0em;
+	}
+	.absolute1{
+		position: relative;
+		margin-top: -3.0em;
+    	margin-left: 3.9em;
+	}
+	.symbol{
+		margin-left:65px;
+	}
+	.form{
+		margin-top:85px;
+	}
+	.contact1{
+		margin-top:13px;
+	}
+	.contact2{
+		margin-top:15px;
+	}
+	.contact3{
+		margin-top:20px;
+	}
+</style>
+
+<div class="container-fluid" style="background-color:#d9fcf7">
+	<h3 class="contact">Contact Us</h3>
+	<p class="contact-p">We are here to support your next challenge, connect with us today!</p>
+</div>
+
+<div class="row">
+	<div class="col-lg-6">
+		<h4>Good Talks MakeGood Projects</h4>
+		<p>Let’s talk about your business ideas, plans and our expert team will help you create the software of your dreams. Get in touch with us for all your staffing requirements and hire our optimal services for getting the project developments done with your budget estimate. You can expect to hear from us within 8 business hours. We believe in building business partnerships that go long-term.</p>
+	</div>
+
+	<div class="col-lg-6">
+		<img alt="Assets" src="/assets/Rectangle 46.png" width="550px" height="200px">
+	</div>	
+</div>
+
+<div class="container-fluid" style="background-color:#F5F5FA">
+	<h3 class="get_touch">Get in Touch for gaining Pixoatic Solutions Services</h3>
+	<p class="get_touch1">When we say we are your Technology Partners, we mean it!</p>
+	<div class="row">
+		<div class="col-lg-2 get_touch2">
+			<img alt="Assets" src="/assets/Rectangle 58.png" >
+			<h5>Virtual Team with best Expertise </h5>
+			<p>Find out how our expert level resources are the right fit for you.</p>
+		</div>
+		<div class="col-lg-2 get_touch3">
+			<img alt="Assets" src="/assets/Rectangle 59.png" >
+			<h5>Support</h5>
+			<p>Got a support-related query? We have all the answers!</p>
+		</div>
+		<div class="col-lg-2 get_touch3">
+			<img alt="Assets" src="/assets/Rectangle 60.png" >
+			<h5>Join Hands</h5>
+			<p>We are your partners in collaboration. Grow your business to new heights with us.</p>
+		</div>
+		<div class="col-lg-2 get_touch3">
+			<img alt="Assets" src="/assets/Rectangle 58.png">
+			<h5>Hire Developer</h5>
+			<p>Flexible business outsourcing models that match your business needs.</p>
+		</div>
+	</div>
+</div>
+
+<div>
+	<div class="row">
+		<div class="col-lg-6">
+			<h5 class="pixo_with">With Pixoatic you can:</h5>
+			<div class="pixo_with1">
+				<img alt="Assets" src="/assets/Capa-7.png"><p  class="inline">Develop products to take your business to the next level</p>
+				<div>
+					<img alt="Assets" src="/assets/Capa-7.png" class="inline"><p class="inline">Launch products (MVP and onwards) with quick turnaround time</p>
+				</div>
+				<img alt="Assets" src="/assets/Capa-7.png"><p class="inline">Flexibility to switch resources quickly</p>
+			</div>
+			<h4 class="trusted">TRUSTED BY</h4>
+			<div class="row symbol">
+				<!-- <div class="col-lg-6"> -->
+					<div class="col-lg-2">
+						<img alt="Assets" src="/assets/circle1.png" height="200" width="150">
+					</div>
+					<div class="col-lg-2">
+						<img alt="Assets" src="/assets/codelab1.png" class="logo" height="200" width="150">
+					</div>
+					<div class="col-lg-2">
+						<img alt="Assets" src="/assets/ideaa 1.png" class="logo absolute" height="60" width="150">
+					</div>
+					
+				<!-- </div> -->
+			</div>
+			<div class="row symbol">
+					<div class="col-lg-2">
+						<img alt="Assets" src="/assets/hexa 1.png" height="100" width="150">
+					</div>
+					<div class="col-lg-2">
+						<img alt="Assets" src="/assets/muzica 1.png" class="logo" height="100" width="150">
+					</div>
+					<div class="col-lg-2">
+						<img alt="Assets" src="/assets/light.png" height="200" width="150" class="absolute1">
+					</div>
+			</div>
+		</div>
+
+		<div class="col-lg-6 form">
+			<div class="row", style="background-color:#f2f4f7">
+				<h5  >Fill the form below to say 'Hi!'</h5>
+				<%= form_with(model: @contact,  url: contactform_path)do |form| %>
+					<div class="row contact1">
+						<div class="col-lg-6">
+							<%= form.text_field :fullname, autofocus: true, placeholder: "Full Name"  %>
+						</div>
+						<div class="col-lg-6">
+							<%= form.email_field :email, autofocus: true, placeholder: "Email Address" %>
+						</div>
+					</div>
+					<div class="row contact2">
+						<div class="col-lg-6">
+							<%= form.text_field :country, autofocus: true, placeholder: "Country"  %>
+						</div>
+						<div class="col-lg-6">
+							<%= form.text_field :country, autofocus: true, placeholder: "Skype" %>
+						</div>
+					</div>
+					<div class="row contact2">
+						<%= form.text_field :message, autofocus: true, placeholder: "Message" %>
+					</div>
+
+					<div class="row contact3", style="background-color:#3684f7" >
+							<%= form.submit "Submit" %>
+					</div>
+
+				<% end %>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div>
+	<div class="row">
+		<div class="col-lg-4">
+			<img alt="Assets" src="/assets/Group 145.png" width="380" >
+		</div>
+		<div class="col-lg-4">
+			<img alt="Assets" src="/assets/Group 146.png"  width="380">
+		</div>
+		<div class="col-lg-4">
+			<img alt="Assets" src="/assets/Group 147.png" width="380">
+		</div>
+	</div>
+</div>
+
+<%= render "footer" %>

@@ -47,6 +47,21 @@ class UsersController < ApplicationController
 	def career
 	end
 
+	def contactus
+		@contact = Contact.new()
+	end
+
+
+	def contactform
+		@contact = Contact.new(contact_params)
+		if @contact.save
+			redirect_to contactus_path, notice: "Query has been submitted successfully"
+		else
+			redirect_to contactus_path
+		end
+	end
+
+
 	private
 
 	def inqury_params
@@ -55,7 +70,10 @@ class UsersController < ApplicationController
 
 	def ondemand_param
 		params.require(:ondemand_form).permit(:firstname, :email, :country, :skype, :technologies, :resources_required, :message)
-		p "--------------------------"
 	end 
+
+	def contact_params
+		params.require(:contact).permit(:fullname, :email, :country, :skype_id, :message)
+	end
 
 end
