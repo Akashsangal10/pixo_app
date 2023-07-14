@@ -10,6 +10,7 @@
 // Active Admin's got SASS!
 @import "active_admin/mixins";
 @import "active_admin/base";
+@import "bootstrap";
 
 // Overriding any non-variable Sass must be done after the fact.
 // For example, to change the default status-tag color:
@@ -17,3 +18,12 @@
 //   .status_tag { background: #6090DB; }
 @import 'activeadmin/quill_editor_input';
 @import 'activeadmin/quill_editor/quill.snow';
+@import 'bulma';
+
+
+
+*= require bootstrap-theme.min
+*= require bootstrap.min
+*= require_tree .
+*= require_self
+*/

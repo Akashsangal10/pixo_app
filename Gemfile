@@ -81,3 +81,8 @@ gem 'activeadmin_quill_editor'
 
 
 # gem "hotwire-rails", "~> 0.1.3"
+
+#design
+gem "font-awesome-rails"
+gem 'bulma-rails'
+gem 'bootstrap_jt'

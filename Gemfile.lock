@@ -86,7 +86,10 @@ GEM
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
+    bootstrap_jt (0.1.0)
     builder (3.2.4)
+    bulma-rails (0.9.4)
+      sassc (~> 2.0)
     capybara (3.38.0)
       addressable
       matrix
@@ -98,7 +101,7 @@ GEM
       xpath (~> 3.2)
     concurrent-ruby (1.2.2)
     crass (1.0.6)
-    cssbundling-rails (1.1.2)
+    cssbundling-rails (1.2.0)
       railties (>= 6.0.0)
     date (3.3.3)
     debug (1.7.1)
@@ -112,6 +115,8 @@ GEM
       warden (~> 1.2.3)
     erubi (1.12.0)
     ffi (1.15.5)
+    font-awesome-rails (4.7.0.8)
+      railties (>= 3.2, < 8.0)
     formtastic (4.0.0)
       actionpack (>= 5.2.0)
     formtastic_i18n (0.7.0)
@@ -291,10 +296,13 @@ DEPENDENCIES
   activeadmin
   activeadmin_quill_editor
   bootsnap
+  bootstrap_jt
+  bulma-rails
   capybara
   cssbundling-rails
   debug
   devise
+  font-awesome-rails
   importmap-rails
   jbuilder
   puma (~> 5.0)

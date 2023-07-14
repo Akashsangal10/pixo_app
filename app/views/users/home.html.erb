@@ -1,5 +1,6 @@
 <html>
 <header>
+
 <style>
    
 
@@ -161,6 +162,31 @@
 
 
 </style>
+
+<meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
 </header>
 
 <body>
@@ -168,12 +194,12 @@
 <section>
 	<div class="container main">
 			<div class="row space6">
-				<div class="col-sm-6 ">
+				<div class="col-lg-6 col-md-6 col-sm-6">
 					<h2 ><%= BusinessGrowth.last.title %></h2>
 					<p><%= BusinessGrowth.last.description %></p>
 					<a class="btn  btn-primary" href="#">Talk to Our Expert </a>
 				</div>
-				<div class="col-sm-3 img1">
+				<div class="col-sm-3 col-lg-3 col-md-3 img1">
 					<%= image_tag(BusinessGrowth.last.image, style: 'width:30vw')%>
 				</div>
 			</div>
@@ -181,12 +207,12 @@
 </section>
 
 
-<%= render "feature" %>
+<%= render "feature1" %>
 
 <section>
 	<div class="card space10"  style="background-color:#d9fcf7">
 		<div class="row space11">
-				<div class=" col-sm-8 absolute">
+				<div class=" col-sm-8 col-md-8 absolute">
 					<h3 class="start"><%= sanitize Startup.last.title %></h3>
 					<p > <%= sanitize Startup.last.description %></p>
 					<img alt="Assets" src="/assets/office-view 1 (2).png" width="1000" 
@@ -197,15 +223,15 @@
 		</div>	
 				<div class="row">
 					<secton>
-					<div class="col-sm-4 absolute1"  style="background-color:#FFFFFF">
+					<div class="col-sm-4 col-md-4 absolute1"  style="background-color:#FFFFFF">
 						<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block"><%= sanitize Startup.last.title1 %></h3>
 						<p class="space14"><%= sanitize Startup.last.description1 %> </p>
 					</div>
-					 <div class="col-sm-4 absolute2"  style="background-color:#FFFFFF">
+					 <div class="col-sm-4 col-md-4 absolute2"  style="background-color:#FFFFFF">
 						<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block"><%= sanitize Startup.last.title2 %></h3>
 						<p class="space14"><%= sanitize Startup.last.description2 %></p>
 					</div> 
-					 <div class="col-sm-4 absolute3"  style="background-color:#FFFFFF">
+					 <div class="col-sm-4 col-md-4 absolute3"  style="background-color:#FFFFFF">
 						<img alt="Assets" src="/assets/Vector.png"><h3 class="inline-block"><%= sanitize Startup.last.title3 %></h3>
 						<p class="space14"><%= sanitize Startup.last.description3 %></p>
 					</div> 
@@ -223,7 +249,7 @@
 
 <section>
 	<div class="row ">
-		<div class="col-sm-5 space16" style="background-color: #f5e3e1;">
+		<div class="col-sm-5  space16" style="background-color: #f5e3e1;">
 			<h4><%= sanitize Work.last.title1 %></h4>
 			<p><%= sanitize Work.last.description1 %></p>
 		</div>
