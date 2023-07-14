@@ -18,12 +18,8 @@
 //   .status_tag { background: #6090DB; }
 @import 'activeadmin/quill_editor_input';
 @import 'activeadmin/quill_editor/quill.snow';
-@import 'bulma';
 
 
 
-*= require bootstrap-theme.min
-*= require bootstrap.min
-*= require_tree .
-*= require_self
-*/
+
+
